@@ -68,7 +68,7 @@ TiltEstimator::TiltEstimator(RTC::Manager* manager)
   m_alpha(alpha_const),
   m_beta(beta_const),
   m_gamma(gamma_const),
-  estimator_(m_alpha, m_beta, m_gamma),
+  estimator_(m_alpha, m_beta, m_gamma, dt_),
   m_pF_prev(so::Vector3::Zero()),
   dt_(sampling_time_const),
   firstSample_(true)
